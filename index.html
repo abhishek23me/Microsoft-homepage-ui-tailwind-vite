@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="SHORTCUT ICON" href="/favicon.ico?v2" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
+</head>
+
+<body>
+    <div class="navbar flex justify-between items-center p-3 md:px-10 lg:px-20">
+        <div class="flex justify-center items-center md:order-2 md:hidden space-x-4">
+            <div class="hamburger inline-block cursor-pointer">
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            </div>
+            <img class="search w-4" src="'/images/search.png" alt="">
+        </div>
+        <div class="logo flex md:order-1">
+            <img class="w-28 h-6" src="/images/ms.png" alt="logo not found">
+            <div
+                class="features text-[13px] absolute md:static w-fit md:w-auto bg-gray-200 md:bg-white inset-0 -translate-x-96 md:mx-8 md:space-x-2 space-x-4 md:flex md:translate-x-0 md:order-2">
+                <div class="hover:underline cursor-pointer hover:underline-offset-8">
+                    Microsoft 365
+                </div>
+                <div class="hover:underline hover:underline-offset-4 cursor-pointer">
+                    Teams
+                </div>
+                <div class="hover:underline hover:underline-offset-4 cursor-pointer">
+                    Copilot
+                </div>
+                <div class="hover:underline hover:underline-offset-4 cursor-pointer">
+                    Windows
+                </div>
+                
+                <div class="hidden lg:flex hover:underline hover:underline-offset-4 cursor-pointer">
+                    Surface
+                </div>
+                <div class="hidden lg:flex hover:underline hover:underline-offset-4 cursor-pointer">
+                    Xbox
+                </div>
+                <div class="hidden lg:flex hover:underline hover:underline-offset-4 cursor-pointer">
+                    Support
+                </div>
+
+                <div class="relative hidden md:block lg:hidden">
+                    <button id="moreButton"
+                        class="text-black text-[13px] hover:underline cursor-pointer hover:bg-white rounded-md focus:outline-none flex items-center">
+                        More
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="dropdownMenu"
+                        class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden">
+                        <div class="py-2">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Surface</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Xbox</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="md:order-3 flex w-fit space-x-4 justify-center items-center">
+            <div class="hidden md:block">
+                <button id="dropdownButton"
+                    class=" text-[13px] text-black hover:underline cursor-pointer hover:underline-offset-8 hover:bg-white rounded-md focus:outline-none flex items-center">
+                    All Microsoft
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="search hidden md:flex">
+                <span class="lg:block hidden text-[13px]">Search</span>
+                <img class="h-3 mt-1 ml-2" src="/images/search.png" alt="">
+            </div>
+            <div class="flex items-center justify-center space-x-4">
+                <span class="text-[13px] xl:block hidden mr-[-10px]">Cart</span>
+                <img class="w-4" src="/images/cart.png" alt="">
+                <span class="text-[13px] xl:block hidden mr-[-10px]">Sign in</span>
+                <img class="w-8" src="/images/account.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="slider flex flex-col-reverse lg:flex-row">
+        <div class="left p-6 lg:p-14 lg:max-w-[27rem] xl:max-w-[36rem] bg-white lg:absolute lg:mx-16 lg:my-12">
+            <h3 style="background-color: #ffb900" class="font-semibold px-3 w-14 p-1">
+                New
+            </h3>
+            <h1 class="text-2xl md:text-4xl font-semibold pt-2">
+                Meet Surface Pro
+            </h1>
+            <p class="pt-3">
+                This laptop's unrivalled flexibility and AI features like Live
+                Captions and Cocreator, enable you to do more than you ever imagined.
+            </p>
+            <button class="bg-blue-600 text-white px-3 py-2 rounded-sm mt-5 font-semibold">
+                Learn more
+            </button>
+        </div>
+        <div class="right w-full">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="/images/imagefirs.avif">
+                <img id="responsiveImage" class="md:w-full md:h-[29rem]" src="/images/image.jpg" alt="Responsive Image">
+            </picture>
+        </div>
+        
+    </div>
+    <div class="slidercontrols my-10 space-x-8 justify-center flex">
+        <div>
+            <img class="h-5" src="/images/play.png" alt="">
+        </div>
+        <div>
+            <img class="h-4 pt-0.5" src="/images/back.png" alt="">
+        </div>
+        <div>
+            <img class="h-4" src="/images/black.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-3.5 pt-0.5" src="/images/blackC.png" alt="">
+        </div>
+        <div>
+            <img class="h-4 pt-0.5" src="/images/next.png" alt="">
+        </div>
+    </div>
+    <div class="services flex flex-col md:flex-row md:space-x-10 md:items-center md:justify-center px-6 py-3">
+        <div class="flex flex-col items-center my-4">
+            <img class="h-12" src="/images/msicon.jpg" alt="">
+            <h1 class="text-blue-700 underline">Choose your Microsoft 365</h1>
+        </div>
+        <div class="flex flex-col items-center my-4">
+            <img class="h-12" src="/images/xbox.jpg" alt="">
+            <h1 class="text-blue-700 underline">Shop Xbox</h1>
+        </div>
+        <div class="flex flex-col items-center my-4">
+            <img class="h-12" src="/images/msicon.jpg" alt="">
+            <h1 class="text-blue-700 underline">Get Windows 11</h1>
+        </div>
+        <div class="flex flex-col items-center my-4">
+            <img class="h-12" src="/images/4th.jpg" alt="">
+            <h1 class="text-blue-700 underline">Explore Surface Devices</h1>
+        </div>
+    </div>
+    <div class="products flex flex-col sm:flex-row flex-wrap justify-center p-4">
+        <div
+            class="w-full sm:w-[48%] lg:w-[22%] mx-auto sm:ml-auto sm:mr-2 lg:ml-auto lg:mr-4 border border-gray-300 my-2 shadow-lg">
+            <img class="w-full" src="/images/img1.avif" alt="">
+            <h1 class="lg:text-3xl text-lg md:text-xl px-5 pt-5 font-semibold">
+                Maximise the everyday with Microsoft 365
+            </h1>
+            <p class="px-5 py-2">
+                Get online protection, secure cloud storage and innovative apps
+                designed to fit your needs - all in one plan.
+            </p>
+            <div class="p-4 flex flex-col">
+                <button class="bg-[#0067b8] text-white p-2 w-[8.5rem]">
+                    For one person
+                </button>
+                <span class="pt-3 text-blue-700">For up to six people ></span>
+            </div>
+        </div>
+        <div
+            class="w-full sm:w-[48%] lg:w-[22%] mx-auto sm:mx-2 lg:mx-4 border border-gray-300 my-2 shadow-lg flex flex-col">
+            <img class="w-full" src="/images/img2.avif" alt="">
+            <div class="px-5 pt-5 flex-grow">
+                <h1 class="lg:text-3xl text-lg md:text-xl font-semibold mb-4">Xbox Series X</h1>
+                <p>The fastest, most powerful Xbox ever.</p>
+            </div>
+            <div class="p-4">
+                <button class="bg-[#0067b8] text-white p-2 w-[10rem]">
+                    Shop Xbox Series X
+                </button>
+            </div>
+        </div>
+        <div
+            class="w-full sm:w-[48%] lg:w-[22%] mx-auto sm:mx-2 lg:mx-4 border border-gray-300 my-2 shadow-lg flex flex-col">
+            <img class="w-full" src="/images/img3.avif" alt="">
+            <div class="px-5 pt-5 flex-grow">
+                <h1 class="lg:text-3xl text-lg md:text-xl font-semibold mb-4">Xbox Series S</h1>
+                <p>Next-gen performance in the smallest Xbox ever.</p>
+            </div>
+            <div class="p-4">
+                <button class="bg-[#0067b8] text-white p-2 w-[10rem]">
+                    Shop Xbox Series S
+                </button>
+            </div>
+        </div>
+        <div
+            class="w-full sm:w-[48%] lg:w-[22%] mx-auto sm:mr-auto sm:ml-2 lg:mr-auto lg:ml-4 border border-gray-300 my-2 shadow-lg flex flex-col">
+            <img class="w-full" src="/images/img4.jpeg" alt="">
+            <div class="px-5 pt-5 flex-grow">
+                <h1 class="lg:text-3xl text-lg  md:text-xl font-semibold mb-4">
+                    Designed for life today – and tomorrow
+                </h1>
+                <p>
+                    The next-generation of games. Your goals. Friends and family.
+                    Windows 11 was made to bring you closer to everything you love.
+                </p>
+            </div>
+            <div class="p-4">
+                <button class="bg-[#0067b8] text-white p-2 w-[11rem]">
+                    See if your PC is ready
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="xbox flex flex-col-reverse lg:flex-row px-4 sm:px-6 my-16 xl:px-14 lg:px-10 xl:12 w-full">
+        <div class="lg:bg-black lg:text-white w-full flex lg:items-center lg:justify-center lg:ml-auto">
+            <div class="flex flex-col lg:mx-20 px-4 py-6">
+                <span class="lg:text-3xl text-lg font-bold">Game Pass</span>
+                <span class="lg:text-lg lg:py-4">
+                    Play new games on day one. Enjoy hundreds of high-quality games
+                    with friends on console and PC.
+                </span>
+                <button class=" bg-[#0067b8] mt-4 text-white lg:bg-blue-500 py-2 px-6 w-[8rem]">
+                    Join now
+                </button>
+            </div>
+        </div>
+        <div class="w-full lg:mr-auto">
+            <img class="w-full h-full" src="/images/xboxg.avif" alt="">
+        </div>
+    </div>
+    <div class="business flex flex-col">
+        <div class="flex items-center mx-4 md:px-2 lg:mx-7 xl:mx-12 pt-10">
+            <span class="font-semibold text-3xl lg:text-[38px]">For business</span>
+            <span class="flex-grow h-1"></span>
+        </div>
+
+        <div class="products flex flex-col sm:flex-row flex-wrap justify-center p-4">
+            <div
+                class="w-full sm:w-[48%] lg:w-[22%] mx-auto sm:ml-auto sm:mr-2 lg:ml-auto lg:mr-4 border border-gray-300 my-2 shadow-lg flex flex-col">
+                <img class="w-full" src="/businessimg/1.avif" alt="">
+                <div class=" flex-grow">
+                    <h1 class="lg:text-3xl text-lg md:text-xl px-5 pt-5 font-semibold">Surface for business</h1>
+                    <p class="px-5 py-3">
+                        No matter what you do, there’s a Surface to help you do it.
+                    </p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-[#0067b8] text-white p-2 sm:w-[8.5rem]">
+                        Shop now
+                    </button>
+                </div>
+            </div>
+            <div
+                class="w-full sm:w-[48%] lg:w-[22%] mx-auto sm:mx-2 lg:mx-4 border border-gray-300 my-2 shadow-lg flex flex-col">
+                <img class="w-full" src="/businessimg/2.avif" alt="">
+                <div class="flex-grow">
+                    <h1 class="lg:text-3xl text-lg md:text-xl px-5 pt-5 font-semibold">Microsoft 365 Copilot</h1>
+                    <p class="px-5 py-3">
+                        Save time and focus on the things that matter most with AI in
+                        Microsoft 365 for business..
+                    </p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-[#0067b8] text-white p-2 sm:w-[10rem]">
+                        Learn more
+                    </button>
+                </div>
+            </div>
+            <div
+                class="w-full sm:w-[48%] lg:w-[22%] mx-auto sm:mx-2 lg:mx-4 border border-gray-300 my-2 shadow-lg flex flex-col">
+                <img class="w-full" src="/businessimg//3.jpeg" alt="">
+                <div class="flex-grow">
+                    <h1 class="lg:text-3xl text-lg md:text-xl px-5 pt-5 font-semibold">Windows 11 for business</h1>
+                    <p class="px-5 py-3">
+                        Designed for hybrid work. Powerful for employees. Consistent for
+                        IT. Secure for all.
+                    </p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-[#0067b8] text-white p-2 sm:w-[10rem]">
+                        Learn more
+                    </button>
+                </div>
+            </div>
+            <div
+                class="w-full sm:w-[48%] lg:w-[22%] mx-auto sm:mr-auto sm:ml-2 lg:mr-auto lg:ml-4 border border-gray-300 my-2 shadow-lg flex flex-col">
+                <img class="w-full" src="/businessimg/4.avif" alt="">
+                <div class="flex-grow">
+                    <h1 class="lg:text-3xl text-lg md:text-xl px-5 pt-5 font-semibold">
+                        Get Microsoft Teams for your business
+                    </h1>
+                    <p class="px-5 py-3">
+                        Online meetings, chat, real-time collaboration, and shared cloud
+                        storage – all in one place.
+                    </p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-[#0067b8] text-white p-2">
+                        Find the right plan for your business
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="follow flex flex-col py-16 sm:p-6 md:py-16 md:px-11 ">
+        <div class="flex space-x-4 p-4">
+            <span>Follow Microsoft</span>
+            <img class="h-8" src="images/Facebook.avif" alt="">
+            <img class="h-8" src="images/x.avif" alt="">
+            <img class="h-8" src="images/YouTube 2x.webp" alt="">
+        </div>
+        <div class=" flex justify-end mr-4 sm:mr-[-8px] md:mr-[-22px]">
+            <button onclick="scrollToTop()" class="flex rounded-sm bg-gray-300 px-3 py-2"><img class="h-3 mt-1.5 mr-1"
+                    src="businessimg/up-arrow.png" alt="">Back to top</button>
+        </div>
+    </div>
+    <div class="bg-[#f2f2f2] footer flex flex-col">
+        <div class="flex flex-row flex-wrap lg:mx-5 ">
+            <div class="first flex flex-col mt-12 px-10 space-y-4 w-full sm:w-[50%] md:w-[33%] lg:w-[16%]">
+                <span class="text-sm font-semibold">What's new</span>
+                <span class="text-[12px]">Surface Pro</span>
+                <span class="text-[12px]">Surface Laptop</span>
+                <span class="text-[12px]">Microsoft Copilot</span>
+                <span class="text-[12px]">Microsoft 365</span>
+                <span class="text-[12px]">Explore Microsoft products</span>
+                <span class="text-[12px]">Windows 11 apps</span>
+            </div>
+            <div class="Second   flex flex-col mt-12 px-10 space-y-4 w-full sm:w-[50%] md:w-[33%] lg:w-[15%]">
+                <span class="text-sm font-semibold">Microsoft Store</span>
+                <span class="text-[12px]">Account profile</span>
+                <span class="text-[12px]">Downloadv center</span>
+                <span class="text-[12px]">Microsoft Store Support</span>
+                <span class="text-[12px]">Returns</span>
+                <span class="text-[12px]">Order Tracking</span>
+            </div>
+            <div class="third  flex flex-col mt-12 px-10 space-y-4 w-full sm:w-[50%] md:w-[33%] lg:w-[20%]">
+                <span class="text-sm font-semibold">Education</span>
+                <span class="text-[12px]">Microsoft in Education</span>
+                <span class="text-[12px]">Devices for Education</span>
+                <span class="text-[12px]">Microsoft Teams for Education</span>
+                <span class="text-[12px]">Microsoft 365 Education</span>
+                <span class="text-[12px]">Office Education</span>
+                <span class="text-[12px]">Educator training and development</span>
+                <span class="text-[12px]">Deals for students and parents</span>
+                <span class="text-[12px]">Azure for students</span>
+            </div>
+            <div class="fourth flex flex-col mt-12 px-10 space-y-4 w-full sm:w-[50%] md:w-[33%] lg:w-[14%]">
+                <span class="text-sm font-semibold">Business</span>
+                <span class="text-[12px]">Microsoft Cloud</span>
+                <span class="text-[12px]">Microsoft Security</span>
+                <span class="text-[12px]">Azure</span>
+                <span class="text-[12px]">Dynamics 365</span>
+                <span class="text-[12px]">Microsoft 365</span>
+                <span class="text-[12px]">Microsoft Advertising</span>
+                <span class="text-[12px]">Microsoft 365 Copilot</span>
+                <span class="text-[12px]">Microsoft Teams</span>
+            </div>
+            <div class="fifth flex flex-col mt-12 px-10 space-y-4 w-full sm:w-[50%] md:w-[33%] lg:w-[17%]">
+                <span class="text-sm font-semibold">Developer & IT</span>
+                <span class="text-[12px]">Developer center</span>
+                <span class="text-[12px]">Documentation</span>
+                <span class="text-[12px]">Microsoft Learn</span>
+                <span class="text-[12px]">MicrosoftTech Community</span>
+                <span class="text-[12px]">Azure Marketplace</span>
+                <span class="text-[12px]">AppSource</span>
+                <span class="text-[12px]">Microsoft Power Platform</span>
+                <span class="text-[12px]">Visual Studio</span>
+            </div>
+            <div class="sixth flex flex-col mt-12 px-10 space-y-4 w-full sm:w-[50%] md:w-[33%] lg:w-[14%]">
+                <span class="text-sm font-semibold">Company</span>
+                <span class="text-[12px]">About Microsoft</span>
+                <span class="text-[12px]">Company news</span>
+                <span class="text-[12px]">Privacy at Microsoft</span>
+                <span class="text-[12px]">Investors</span>
+                <span class="text-[12px]">Security</span>
+                <span class="text-[12px]">Sustainability</span>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row">
+            <div class="space-y-5 flex flex-col p-10 lg:flex-row lg:space-x-5 lg:ml-5">
+                <div class="flex lg:mt-4">
+                    <img class="h-7" src="/images/earth.png" alt="">
+                    <span class="text-[12px] mt-1 ml-2"> English (India)</span>
+                </div>
+                <div class="flex">
+                    <svg class="mt-0.5 mr-1.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 14"
+                        xml:space="preserve" height="18" width="43">
+                        <title>Your Privacy Choices Opt-Out Icon</title>
+                        <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+                            style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+                        <path
+                            d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+                            style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+                        <path
+                            d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+                            style="fill:#fff"></path>
+                        <path
+                            d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+                            style="fill:#06f"></path>
+                    </svg>
+                    <span class="text-[12px] ">Your Privacy Choices</span>
+                </div>
+                <div class="text-[12px]">
+                    Consumer Health Privacy
+                </div>
+            </div>
+            <div
+                class="pl-6 flex flex-row lg:ml-auto space-x-4 lg:items-center lg:mt-[53px]  text-[12px] md:justify-end md:mr-14 pb-10 flex-wrap">
+                <span class="ml-4">Contact Microsoft</span>
+                <span>Privacy</span>
+                <span>Terms of use</span>
+                <span>Trademarks</span>
+                <span>About our ads</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdownButton = document.getElementById('dropdownButton');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownButton.addEventListener('click', () => {
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (event) => {
+                if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     function updateImage() {
+        //         const img = document.getElementById('responsiveImage');
+        //         if (window.innerWidth >= 1024) {
+        //             img.src = 'imagefirs.avif';
+        //         } else {
+        //             img.src = 'image.jpg';
+        //         }
+        //     }
+
+        //     // Call the function once when the DOM loads
+        //     updateImage();
+
+        //     // Optionally, update the image on window resize
+        //     window.addEventListener('resize', updateImage);
+        // });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
